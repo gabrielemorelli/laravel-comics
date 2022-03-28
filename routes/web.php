@@ -14,47 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/characters', function () {
-    return view('characters');
+        return view('characters');
 });
 
 Route::get('/comics', function () {
-    return view('comics');
-});
+   
+    $fumetti = config('fumetti');
 
-Route::get('/movies', function () {
-    return view('tv');
-});
-
-Route::get('/games', function () {
-    return view('comics');
-});
-
-Route::get('/comics', function () {
-    return view('comics');
-});
-
-Route::get('/comics', function () {
-    return view('comics');
-});
-
-Route::get('/comics', function () {
-    return view('comics');
+    return view('comics', ['generi' => $fumetti]);
 });
 
 
-Route::get('/comics', function () {
-    return view('comics');
-});
-
-
-Route::get('/comics', function () {
-    return view('comics');
-});
-
-
-Route::get('/comics', function () {
-    return view('comics');
-});
 
 
 
