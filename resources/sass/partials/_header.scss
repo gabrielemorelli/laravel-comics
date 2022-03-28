@@ -1,0 +1,31 @@
+.testata {
+    margin: 0 auto;
+    width: 70%;
+    height: 120px;
+   
+  }
+  
+  .logo {
+    float: left;
+    margin-top: 10px;
+    width: 20%;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
+  .lista {
+    padding: 10px;
+    line-height: 120px;
+    font-size: 15px;
+  }
+  
+  .jumbotron {
+   height: 350px;
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-position: top;
+  background-size: cover;
+  }
+  
