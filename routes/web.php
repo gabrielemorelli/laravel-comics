@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/characters', function () {
-        return view('characters');
-});
+
 
 Route::get('/comics', function () {
    

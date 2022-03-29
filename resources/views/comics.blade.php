@@ -5,20 +5,26 @@
 @section('pageTitle', 'comics')
 
 @section('content')
-<main>
+<section id=products>
     <div class="container">
+       
+        @foreach ($generi as $genere )
         <div class="product">
-            @foreach ($generi as $genere )
-            <img src="{{$genere['thumb']}}" alt="">
-            <h4>{{$genere['title']}}</h4>
-                
-            @endforeach
-        </div>
+        <img src="{{$genere['thumb']}}" alt="">
+        <h4>{{$genere['title']}}</h4>
+          </div>
+        @endforeach
+  
 
-    </div>
-</main>
+</div>
+
+<div class="bottone">
+    <a href="#" class="btn"> LOAD MORE </a>
+  </div>
 
 
 
+</section>
+   
 
 @endsection
